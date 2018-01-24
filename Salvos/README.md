@@ -1,0 +1,1 @@
+This repository contains source code of the game.
