@@ -105,16 +105,6 @@ public class SimpleCharacterControl : MonoBehaviour {
                 break;
         }
 
-        Vector3 mypos= transform.position;
-        if(mypos.x>1000)
-            mypos.x = 1000;
-        else if(mypos.x<0)
-            mypos.x=0;
-        if(mypos.z<0)
-            mypos.z=0;
-        else if(mypos.z>1000)
-            mypos.z=1000;
-        transform.position=mypos;
         m_wasGrounded = m_isGrounded;
     }
 
