@@ -33,11 +33,6 @@ public class SimpleCharacterControl : MonoBehaviour {
 
     private bool m_isGrounded;
     private List<Collider> m_collisions = new List<Collider>();
-    private GameObject canvas;
-
-    private void Start() {
-        canvas=GameObject.Find("Canvas");
-    }
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -94,7 +89,9 @@ public class SimpleCharacterControl : MonoBehaviour {
 
 	void Update () {
         m_animator.SetBool("Grounded", m_isGrounded);
-        switch(m_controlMode){
+
+        switch(m_controlMode)
+        {
             case ControlMode.Direct:
                 DirectUpdate();
                 break;
@@ -107,6 +104,7 @@ public class SimpleCharacterControl : MonoBehaviour {
                 Debug.LogError("Unsupported state");
                 break;
         }
+
         m_wasGrounded = m_isGrounded;
     }
 
@@ -130,18 +128,6 @@ public class SimpleCharacterControl : MonoBehaviour {
 
         transform.position += transform.forward * m_currentV * m_moveSpeed * Time.deltaTime;
         transform.Rotate(0, m_currentH * m_turnSpeed * Time.deltaTime, 0);
-
-        Vector3 mypos=transform.position;
-        if(mypos.x<0)
-            mypos.x=0;
-        else if(mypos.x>1000)
-            mypos.x=1000;
-
-        if(mypos.z<0)
-            mypos.z=0;
-        else if(mypos.z>1000)
-            mypos.z=1000;
-        transform.position=mypos;
 
         m_animator.SetFloat("MoveSpeed", m_currentV);
 
@@ -179,18 +165,6 @@ public class SimpleCharacterControl : MonoBehaviour {
 
             m_animator.SetFloat("MoveSpeed", direction.magnitude);
         }
-
-        Vector3 mypos=transform.position;
-        if(mypos.x<0)
-            mypos.x=0;
-        else if(mypos.x>1000)
-            mypos.x=1000;
-
-        if(mypos.z<0)
-            mypos.z=0;
-        else if(mypos.z>1000)
-            mypos.z=1000;
-        transform.position=mypos;
 
         JumpingAndLanding();
     }
