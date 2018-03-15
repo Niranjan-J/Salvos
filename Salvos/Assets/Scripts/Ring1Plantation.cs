@@ -8,6 +8,7 @@ public class Ring1Plantation : MonoBehaviour {
 	
 	private void OnTriggerEnter(Collider other) {
 		Destroy(gameObject);
+		ScoreController.i++;
 		m.SetActive(true);
 		Destroy(dr);
 		re1.SetActive(true);

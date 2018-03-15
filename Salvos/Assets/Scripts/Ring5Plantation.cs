@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Ring5Plantation : MonoBehaviour {
-	public GameObject m,dr,c,b;
+	public GameObject m,dr,p,b;
 	public Text mt;	
 	private void OnTriggerEnter(Collider other) {
 		Destroy(gameObject);
@@ -12,6 +12,6 @@ public class Ring5Plantation : MonoBehaviour {
 		Destroy(dr);
 		b.SetActive(false);
 		mt.text="You Lose.\nHint: Steeper Mountains have greater chances of landslides.";
-		c.SetActive(true);
+		p.SetActive(true);
 	}
 }

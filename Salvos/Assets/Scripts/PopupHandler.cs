@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class PopupHandler : MonoBehaviour {
+	public GameObject panel;
 	private Text Message,ButtonText;
 	private string[] s= {
 		"Hello! Let's get started with our 1st Mission!",
@@ -12,7 +13,7 @@ public class PopupHandler : MonoBehaviour {
 		"You can only chose one among the two mountains.",
 		"You have to detect where landslide could occur.",
 		"Look at the mountains on your sides.",
-		"You're All Set... Goodluck!!!"
+		"You're All Set... Goodluck!!!",""
 	};
 
 	private static int i;
@@ -27,9 +28,9 @@ public class PopupHandler : MonoBehaviour {
 	void GameGuide(){
 		i++;
 		Message.text= s[i];
-		if(i==5)
+		if(i==6)
 			ButtonText.text="Start";
-		else if(i==6)
-			gameObject.SetActive(false);
+		else if(i==7)
+			panel.SetActive(false);
 	}
 }

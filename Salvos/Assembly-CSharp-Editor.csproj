@@ -51,20 +51,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\NatureStarterKit2\Editor\ImageEffects\AntialiasingEditor.cs" />
-     <Compile Include="Assets\NatureStarterKit2\Editor\ImageEffects\BloomAndFlaresEditor.cs" />
-     <Compile Include="Assets\NatureStarterKit2\Editor\ImageEffects\BloomEditor.cs" />
-     <Compile Include="Assets\NatureStarterKit2\Editor\ImageEffects\CameraMotionBlurEditor.cs" />
-     <Compile Include="Assets\NatureStarterKit2\Editor\ImageEffects\ColorCorrectionCurvesEditor.cs" />
-     <Compile Include="Assets\NatureStarterKit2\Editor\ImageEffects\ColorCorrectionLookupEditor.cs" />
-     <Compile Include="Assets\NatureStarterKit2\Editor\ImageEffects\CreaseShadingEditor.cs" />
-     <Compile Include="Assets\NatureStarterKit2\Editor\ImageEffects\DepthOfFieldDeprecatedEditor.cs" />
-     <Compile Include="Assets\NatureStarterKit2\Editor\ImageEffects\DepthOfFieldEditor.cs" />
-     <Compile Include="Assets\NatureStarterKit2\Editor\ImageEffects\EdgeDetectionEditor.cs" />
-     <Compile Include="Assets\NatureStarterKit2\Editor\ImageEffects\NoiseAndGrainEditor.cs" />
-     <Compile Include="Assets\NatureStarterKit2\Editor\ImageEffects\SunShaftsEditor.cs" />
-     <Compile Include="Assets\NatureStarterKit2\Editor\ImageEffects\TonemappingEditor.cs" />
-     <Compile Include="Assets\NatureStarterKit2\Editor\ImageEffects\VignetteAndChromaticAberrationEditor.cs" />
+     <Compile Include="Assets\Packs\NatureStarterKit2\Editor\ImageEffects\AntialiasingEditor.cs" />
+     <Compile Include="Assets\Packs\NatureStarterKit2\Editor\ImageEffects\BloomAndFlaresEditor.cs" />
+     <Compile Include="Assets\Packs\NatureStarterKit2\Editor\ImageEffects\BloomEditor.cs" />
+     <Compile Include="Assets\Packs\NatureStarterKit2\Editor\ImageEffects\CameraMotionBlurEditor.cs" />
+     <Compile Include="Assets\Packs\NatureStarterKit2\Editor\ImageEffects\ColorCorrectionCurvesEditor.cs" />
+     <Compile Include="Assets\Packs\NatureStarterKit2\Editor\ImageEffects\ColorCorrectionLookupEditor.cs" />
+     <Compile Include="Assets\Packs\NatureStarterKit2\Editor\ImageEffects\CreaseShadingEditor.cs" />
+     <Compile Include="Assets\Packs\NatureStarterKit2\Editor\ImageEffects\DepthOfFieldDeprecatedEditor.cs" />
+     <Compile Include="Assets\Packs\NatureStarterKit2\Editor\ImageEffects\DepthOfFieldEditor.cs" />
+     <Compile Include="Assets\Packs\NatureStarterKit2\Editor\ImageEffects\EdgeDetectionEditor.cs" />
+     <Compile Include="Assets\Packs\NatureStarterKit2\Editor\ImageEffects\NoiseAndGrainEditor.cs" />
+     <Compile Include="Assets\Packs\NatureStarterKit2\Editor\ImageEffects\SunShaftsEditor.cs" />
+     <Compile Include="Assets\Packs\NatureStarterKit2\Editor\ImageEffects\TonemappingEditor.cs" />
+     <Compile Include="Assets\Packs\NatureStarterKit2\Editor\ImageEffects\VignetteAndChromaticAberrationEditor.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -135,10 +135,10 @@
  <HintPath>C:/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="TextMeshPro-2017.3-1.0.56-Editor">
- <HintPath>D:/Documents/Group-H-Project-4/Salvos/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-1.0.56-Editor.dll</HintPath>
+ <HintPath>D:/Documents/Group-H-Project-4/Salvos/Assets/Packs/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-1.0.56-Editor.dll</HintPath>
  </Reference>
  <Reference Include="TextMeshPro-2017.3-1.0.56-Runtime">
- <HintPath>D:/Documents/Group-H-Project-4/Salvos/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-1.0.56-Runtime.dll</HintPath>
+ <HintPath>D:/Documents/Group-H-Project-4/Salvos/Assets/Packs/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-1.0.56-Runtime.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Advertisements">
  <HintPath>C:/Users/Niranjan/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/UnityEngine.Advertisements.dll</HintPath>

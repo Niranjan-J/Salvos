@@ -9,6 +9,7 @@ public class SimpleCharacterControl : MonoBehaviour {
         Direct
     }
 
+    public GameObject panel;
     [SerializeField] private float m_moveSpeed = 2;
     [SerializeField] private float m_turnSpeed = 200;
     [SerializeField] private float m_jumpForce = 4;
@@ -33,11 +34,6 @@ public class SimpleCharacterControl : MonoBehaviour {
 
     private bool m_isGrounded;
     private List<Collider> m_collisions = new List<Collider>();
-    private GameObject canvas;
-
-    private void Start() {
-        canvas=GameObject.Find("Canvas");
-    }
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -93,7 +89,9 @@ public class SimpleCharacterControl : MonoBehaviour {
     }
 
 	void Update () {
+        
         m_animator.SetBool("Grounded", m_isGrounded);
+        if(!panel.activeSelf){
         switch(m_controlMode){
             case ControlMode.Direct:
                 DirectUpdate();
@@ -106,6 +104,7 @@ public class SimpleCharacterControl : MonoBehaviour {
             default:
                 Debug.LogError("Unsupported state");
                 break;
+        }
         }
         m_wasGrounded = m_isGrounded;
     }
