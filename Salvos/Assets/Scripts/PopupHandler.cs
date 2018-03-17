@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PopupHandler : MonoBehaviour {
-	public GameObject panel;
-	private Text Message,ButtonText;
+	public GameObject panel,back,next;
+	private Text Message,NextText,BackText;
 	private string[] s= {
 		"Hello! Let's get started with our 1st Mission!",
 		"Look at the mountain/peaks to find highlighted region.",
@@ -20,17 +21,43 @@ public class PopupHandler : MonoBehaviour {
 	void Start () {
 		i=0;
 		Message=GameObject.Find("Message").GetComponent<Text>();
-		ButtonText = GameObject.Find("Button/Text").GetComponent<Text>();
-		ButtonText.text="Next";
+		NextText = next.GetComponentInChildren<Text>();
+		BackText=back.GetComponentInChildren<Text>();
+		NextText.text="Next";
+		BackText.text="Back";
 		Message.text=s[i];
-		GameObject.Find("Button").GetComponent<Button>().onClick.AddListener(GameGuide);
+		next.GetComponent<Button>().onClick.AddListener(Next);
+		back.GetComponent<Button>().onClick.AddListener(Back);
 	}
-	void GameGuide(){
+	void Next(){
 		i++;
-		Message.text= s[i];
-		if(i==6)
-			ButtonText.text="Start";
-		else if(i==7)
+		if(i==8){
+			SceneManager.LoadScene(0);
+			return;
+		}
+		GameGuide(i);
+	}
+	void Back(){
+		i--;
+		if(i<0)
+			i=0;
+		else if(i==6){
+			SceneManager.LoadScene(2);
+			return;
+		}
+		GameGuide(i);
+	}
+	void GameGuide(int j){
+		Message.text= s[j];
+		if(j==6){
+			NextText.text="Start";
+			back.SetActive(false);
+		}
+		else if(j==7){
 			panel.SetActive(false);
+			back.SetActive(true);
+			NextText.text="Main Menu";
+			BackText.text="Retry";
+		}
 	}
 }

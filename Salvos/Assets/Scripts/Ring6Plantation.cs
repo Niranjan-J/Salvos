@@ -4,21 +4,17 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Ring6Plantation : MonoBehaviour {
-	public GameObject m,dr,p,b;
-	public Text mt,score;	
+	public GameObject m,dr,p;
+	public Text mt;	
 	private void OnTriggerEnter(Collider other) {
 		Destroy(gameObject);
 		ScoreController.i++;
 		m.SetActive(true);
 		Destroy(dr);
-		Debug.Log(score.text);
-		if(ScoreController.i==3){
-			mt.text="Well Done!! You Win!!\nSteeper Mountains have greater chances of landslides.";
-		}
-		else{
-			mt.text="You Lose.\nHint: Steeper Mountains have greater chances of landslides.";
-		}
-		b.SetActive(false);
+		if(ScoreController.i==3)
+			mt.text="Well Done!! You Win!!\nPLANTING TREES on STEEPER MOUNUTAINS reduce the risk of landslides.";
+		else
+			mt.text="You Lose.\nHint: STEEPER MOUNUTAINS have greater chances of landslides.";
 		p.SetActive(true);
 	}
 }
