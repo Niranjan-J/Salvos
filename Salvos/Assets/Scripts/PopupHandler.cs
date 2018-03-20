@@ -32,7 +32,7 @@ public class PopupHandler : MonoBehaviour {
 	void Next(){
 		i++;
 		if(i==8){
-			SceneManager.LoadScene(0);
+			SceneManager.LoadScene(4);
 			return;
 		}
 		GameGuide(i);
@@ -42,7 +42,7 @@ public class PopupHandler : MonoBehaviour {
 		if(i<0)
 			i=0;
 		else if(i==6){
-			SceneManager.LoadScene(2);
+			SceneManager.LoadScene(1);
 			return;
 		}
 		GameGuide(i);
