@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_Scenes/Mission4.unity
+- path: Assets/InteractiveMobileMenu/Scenes/SelectLevel.unity
   isLoaded: 1
   isActive: 1

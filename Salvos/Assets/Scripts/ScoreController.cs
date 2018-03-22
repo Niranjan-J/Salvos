@@ -14,6 +14,5 @@ public class ScoreController : MonoBehaviour {
 
 	void Update () {
 		score.text="SCORE: "+i;
-
 	}
 }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44658017, g: 0.49641502, b: 0.57482153, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -3856,8 +3856,6 @@ MonoBehaviour:
   m: {fileID: 1112555530}
   dr: {fileID: 1412019448}
   p: {fileID: 1648564057}
-  next: {fileID: 1751334296}
-  back: {fileID: 611535203}
   mt: {fileID: 1783243854}
 --- !u!65 &502194036
 BoxCollider:
@@ -11874,6 +11872,7 @@ GameObject:
   - component: {fileID: 1180155748}
   - component: {fileID: 1180155752}
   - component: {fileID: 1180155753}
+  - component: {fileID: 1180155754}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -11964,6 +11963,18 @@ Skybox:
   m_GameObject: {fileID: 1180155747}
   m_Enabled: 1
   m_CustomSkybox: {fileID: 2100000, guid: 39cace2863926444a9a78daa8ae26413, type: 2}
+--- !u!114 &1180155754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1180155747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ee9f7b796cb1dd4aa371e1dfb97c97d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextLevelIndex: 4
 --- !u!1001 &1205368065
 Prefab:
   m_ObjectHideFlags: 0
@@ -15673,8 +15684,6 @@ MonoBehaviour:
   m: {fileID: 10103608}
   dr: {fileID: 502194031}
   p: {fileID: 1648564057}
-  next: {fileID: 1751334296}
-  back: {fileID: 611535203}
   mt: {fileID: 1783243854}
 --- !u!65 &1412019453
 BoxCollider:

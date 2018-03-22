@@ -35,12 +35,13 @@ public class LevelSelectionLogic : MonoBehaviour {
 		for(int i = 0; i < levelList.Count; i++)
 		{
 			//draw stats depends on how much stars we gained;
-			if(levelList[i].isFinished)
+			if(levelList[i].unlocked)
 			{
 				if(levelList[i].starsCount == 1) levelList[i].Stats.sprite = levelList[i].levelSettings.OneStar;
 				if(levelList[i].starsCount == 2) levelList[i].Stats.sprite = levelList[i].levelSettings.TwoStars;
 				if(levelList[i].starsCount == 3) levelList[i].Stats.sprite = levelList[i].levelSettings.ThreeStars;
-
+			}
+			if(levelList[i].isFinished){	
 				//unlock next level;
 				if(i+1 <= levelList.Count-1)
 				{

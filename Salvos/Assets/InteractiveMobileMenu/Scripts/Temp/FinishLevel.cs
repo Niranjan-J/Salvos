@@ -14,19 +14,19 @@ public class FinishLevel : MonoBehaviour {
 	
 	// Examples on how to finish level and save stats;
 	void OnGUI (){
-		if (GUI.Button(new Rect(0, Screen.height/2 - 105, Screen.width, 100), "Finish Level With 1 Star"))
+		if (ScoreController.i == 1)
 		{
-			Data.SaveData(levelIndex, true, 1);
-			LoadNextLevel();
+			Data.SaveData(levelIndex, false, 1);
+			//LoadNextLevel();
 		}
 
-		if (GUI.Button(new Rect(0, Screen.height/2, Screen.width, 100), "Finish Level With 2 Stars"))
+		if (ScoreController.i == 2)
 		{
-			Data.SaveData(levelIndex, true, 2);
-			LoadNextLevel();
+			Data.SaveData(levelIndex, false, 2);
+			//LoadNextLevel();
 		}
 
-		if (GUI.Button(new Rect(0, Screen.height/2 + 105, Screen.width, 100), "Finish Level With 3 Stars"))
+		if (ScoreController.i == 3)
 		{
 			Data.SaveData(levelIndex, true, 3);
 			LoadNextLevel();
