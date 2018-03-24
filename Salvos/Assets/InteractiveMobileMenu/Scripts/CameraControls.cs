@@ -2,7 +2,7 @@
 
 public class CameraControls : MonoBehaviour
 {
-	public float dragSpeed = 10;							//Camera drag speed;
+	public float dragSpeed = 100000;							//Camera drag speed;
 	public Vector2 sizeX = new Vector2 (-15, -10);			//Default bound size;
 	public Vector2 sizeY = new Vector2 (15, 10);
 

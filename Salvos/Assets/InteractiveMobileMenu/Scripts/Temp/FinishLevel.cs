@@ -29,13 +29,13 @@ public class FinishLevel : MonoBehaviour {
 		if (ScoreController.i == 3)
 		{
 			Data.SaveData(levelIndex, true, 3);
-			LoadNextLevel();
+			//LoadNextLevel();
 		}
 	}
 
 	//What should we load depends on the OnFinish enum choice;
-	void LoadNextLevel()
+	/*void LoadNextLevel()
 	{
 		Application.LoadLevel(nextLevelIndex);
-	}
+	}*/
 }

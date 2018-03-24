@@ -23,8 +23,8 @@ public class PopupHandler : MonoBehaviour {
 		Message=GameObject.Find("Message").GetComponent<Text>();
 		NextText = next.GetComponentInChildren<Text>();
 		BackText=back.GetComponentInChildren<Text>();
-		NextText.text="Next";
-		BackText.text="Back";
+		NextText.text="NEXT";
+		BackText.text="BACK";
 		Message.text=s[i];
 		next.GetComponent<Button>().onClick.AddListener(Next);
 		back.GetComponent<Button>().onClick.AddListener(Back);
@@ -50,14 +50,14 @@ public class PopupHandler : MonoBehaviour {
 	void GameGuide(int j){
 		Message.text= s[j];
 		if(j==6){
-			NextText.text="Start";
+			NextText.text="START";
 			back.SetActive(false);
 		}
 		else if(j==7){
 			panel.SetActive(false);
 			back.SetActive(true);
-			NextText.text="Main Menu";
-			BackText.text="Retry";
+			NextText.text="MAIN MENU";
+			BackText.text="RETRY";
 		}
 	}
 }
