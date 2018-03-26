@@ -8,7 +8,7 @@ public class SimpleCharacterControl : MonoBehaviour {
         Tank,
         Direct
     }
-
+    public int minx,maxx,minz,maxz;
     public GameObject panel;
     [SerializeField] private float m_moveSpeed = 2;
     [SerializeField] private float m_turnSpeed = 200;
@@ -130,15 +130,15 @@ public class SimpleCharacterControl : MonoBehaviour {
         transform.Rotate(0, m_currentH * m_turnSpeed * Time.deltaTime, 0);
 
         Vector3 mypos=transform.position;
-        if(mypos.x<0)
-            mypos.x=0;
-        else if(mypos.x>1000)
-            mypos.x=1000;
+        if(mypos.x<minx)
+            mypos.x=minx;
+        else if(mypos.x>maxx)
+            mypos.x=maxx;
 
-        if(mypos.z<0)
-            mypos.z=0;
-        else if(mypos.z>1000)
-            mypos.z=1000;
+        if(mypos.z<minz)
+            mypos.z=minz;
+        else if(mypos.z>maxz)
+            mypos.z=maxz;
         transform.position=mypos;
 
         m_animator.SetFloat("MoveSpeed", m_currentV);
@@ -180,15 +180,15 @@ public class SimpleCharacterControl : MonoBehaviour {
         }
 
         Vector3 mypos=transform.position;
-        if(mypos.x<0)
-            mypos.x=0;
-        else if(mypos.x>1000)
-            mypos.x=1000;
+        if(mypos.x<minx)
+            mypos.x=minx;
+        else if(mypos.x>maxx)
+            mypos.x=maxx;
 
-        if(mypos.z<0)
-            mypos.z=0;
-        else if(mypos.z>1000)
-            mypos.z=1000;
+        if(mypos.z<minz)
+            mypos.z=minz;
+        else if(mypos.z>maxz)
+            mypos.z=maxz;
         transform.position=mypos;
 
         JumpingAndLanding();
