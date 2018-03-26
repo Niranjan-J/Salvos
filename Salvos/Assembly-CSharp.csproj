@@ -183,8 +183,6 @@
      <Compile Include="Assets\Scripts\QuitGamePopup.cs" />
      <Compile Include="Assets\Scripts\Ring1Plantation.cs" />
      <Compile Include="Assets\Scripts\Ring2Plantation.cs" />
-     <Compile Include="Assets\Scripts\Ring3Plantation.cs" />
-     <Compile Include="Assets\Scripts\Ring4Plantation.cs" />
      <Compile Include="Assets\Scripts\Ring5Plantation.cs" />
      <Compile Include="Assets\Scripts\Ring6Plantation.cs" />
      <Compile Include="Assets\Scripts\ScoreController.cs" />
@@ -358,10 +356,10 @@
  <HintPath>C:/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="TextMeshPro-2017.3-1.0.56-Editor">
- <HintPath>D:/Downloads/Group-H-Project-4/Salvos/Assets/Packs/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-1.0.56-Editor.dll</HintPath>
+ <HintPath>D:/Documents/Group-H-Project-4/Salvos/Assets/Packs/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-1.0.56-Editor.dll</HintPath>
  </Reference>
  <Reference Include="TextMeshPro-2017.3-1.0.56-Runtime">
- <HintPath>D:/Downloads/Group-H-Project-4/Salvos/Assets/Packs/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-1.0.56-Runtime.dll</HintPath>
+ <HintPath>D:/Documents/Group-H-Project-4/Salvos/Assets/Packs/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-1.0.56-Runtime.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Advertisements">
  <HintPath>C:/Users/Niranjan/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/UnityEngine.Advertisements.dll</HintPath>
