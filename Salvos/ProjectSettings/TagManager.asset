@@ -6,6 +6,8 @@ TagManager:
   tags:
   - MaterialButtonLayer
   - MaterialText
+  - Firstaid
+  - Injured
   layers:
   - Default
   - TransparentFX
