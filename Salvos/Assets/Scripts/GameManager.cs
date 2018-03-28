@@ -6,12 +6,14 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 
-public class GameManager : MonoBehaviour {
+public class GameManager : MonoBehaviour
+{
     public Question[] questions;
     private static List<Question> unansweredQuestions;
     public Text score;
-    private static int i = 0;
+    public static int i = 0;
     private static int j = 0;
+    public static int scene = 0;
     private Question currentQuestion;
     [SerializeField]
     private Text factText;
@@ -27,29 +29,24 @@ public class GameManager : MonoBehaviour {
     private float TimeBwQuestions = 1f;
     [SerializeField]
     private Animator animator;
-
-    /*
     
-    [SerializeField]
-    private Text trueAnswer;
-    [SerializeField]
-    private Text falseAnswer;
-    
-    */
     void Start()
     {
+        scene = 0;
         score.text = "Score:  " + i.ToString();
-        if(unansweredQuestions == null || unansweredQuestions.Count == 0)
+        if (unansweredQuestions == null || unansweredQuestions.Count == 0)
         {
             unansweredQuestions = questions.ToList<Question>();
         }
         j++;
-        if(j==4)
+        if (j >= 11)
         {
-            SceneManager.LoadScene(4);
+            scene = 1;
+            j = 0;
+            SceneManager.LoadScene(6);
         }
-        SetCurrentQuestion ();
-        
+        SetCurrentQuestion();
+
     }
 
     void SetCurrentQuestion()
@@ -66,19 +63,19 @@ public class GameManager : MonoBehaviour {
         unansweredQuestions.RemoveAt(randomQuestionIndex);
     }
 
-IEnumerator NextQuestion ()
-{
-    unansweredQuestions.Remove(currentQuestion);
-    yield return new WaitForSeconds(TimeBwQuestions);
-    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-}
+    IEnumerator NextQuestion()
+    {
+        unansweredQuestions.Remove(currentQuestion);
+        yield return new WaitForSeconds(TimeBwQuestions);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 
 
 
-    public void Opt0 ()
+    public void Opt0()
 
     {
-        
+
         if (currentQuestion.ans == 0)
         {
             i++;

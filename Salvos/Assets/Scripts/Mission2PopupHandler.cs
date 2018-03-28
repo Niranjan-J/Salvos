@@ -5,7 +5,8 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class Mission2PopupHandler : MonoBehaviour {
-	public GameObject panel,back,next;
+    public static int scene = 0;
+    public GameObject panel,back,next;
 	private Text Message,NextText,BackText;
 	private string[] s= {
 		"Hello! Let's get started with our 2nd Mission!",
@@ -32,7 +33,8 @@ public class Mission2PopupHandler : MonoBehaviour {
 	void Next(){
 		i++;
 		if(i==8){
-			SceneManager.LoadScene(4);
+            scene = 1;
+            SceneManager.LoadScene(6);
 			return;
 		}
 		GameGuide(i);
@@ -42,7 +44,7 @@ public class Mission2PopupHandler : MonoBehaviour {
 		if(i<0)
 			i=0;
 		else if(i==6){
-			SceneManager.LoadScene(1);
+			SceneManager.LoadScene(2);
 			return;
 		}
 		GameGuide(i);

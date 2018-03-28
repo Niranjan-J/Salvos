@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/_Scenes/Mission1.unity
     guid: 9503a292a1aedae48a2b47720014092b
   - enabled: 1
+    path: Assets/_Scenes/Mission2.unity
+    guid: 9ade6de2b8d481c458e1aad0fd51963e
+  - enabled: 1
     path: Assets/_Scenes/Mission4.unity
     guid: 49fa2c3408720024899ff6b88d8211a0
   - enabled: 1
@@ -20,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/InteractiveMobileMenu/Scenes/SelectLevel.unity
     guid: c549fcda082ae6144822a268b016bbdc
+  - enabled: 1
+    path: Assets/_Scenes/MissionComplete.unity
+    guid: ec565ea255bddec408d08754303b8d42
   m_configObjects: {}

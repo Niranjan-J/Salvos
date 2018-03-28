@@ -10,7 +10,7 @@ public class Mission2Character : MonoBehaviour {
         Direct
     }
     private int i;
-    public int j; 
+    public static int j; 
     public int minx,maxx,minz,maxz;
     public GameObject panel;
     public Text score;
