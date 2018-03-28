@@ -11,4 +11,8 @@ public class OptionsMenu : MonoBehaviour {
 	{
 		audioMixer.SetFloat("volume", volume);
 	}
+
+	public void ResetProgress(){
+		PlayerPrefs.DeleteAll();
+	}
 }
