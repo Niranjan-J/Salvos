@@ -69,10 +69,19 @@ public class MissionComplete : MonoBehaviour
                 starsCount = 3;
                 animator.SetTrigger("Star_3");
             }
-        }else
-        if (GameManager.scene == 1)
+        }
+        else
+        if (GameScript.scene == 1)
         {
             levelIndex = 3;
+            isFinished = true;
+            starsCount = 3;
+             animator.SetTrigger("Star_3");
+        }
+        else
+        if (GameManager.scene == 1)
+        {
+            levelIndex = 4;
             if (GameManager.i == 0)
             {
                 starsCount = 0;
@@ -124,18 +133,31 @@ public class MissionComplete : MonoBehaviour
         {
             PopupHandler.scene = 0;
         }
-        SceneManager.LoadScene(5);
+        else
+        if (GameScript.scene == 1)
+        {
+            GameScript.scene = 0;
+        }
+        SceneManager.LoadScene(6);
     }
 
     public void Retry()
     {
         if (GameManager.scene == 1)
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(4);
         }
         if (PopupHandler.scene == 1)
         {
             SceneManager.LoadScene(1);
+        }
+        if (GameScript.scene == 1)
+        {
+            SceneManager.LoadScene(3);
+        }
+        if(Mission2PopupHandler.scene ==1)
+        {
+            SceneManager.LoadScene(2);
         }
 
     }

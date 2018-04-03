@@ -34,7 +34,7 @@ public class Mission2PopupHandler : MonoBehaviour {
 		i++;
 		if(i==8){
             scene = 1;
-            SceneManager.LoadScene(6);
+            SceneManager.LoadScene(7);
 			return;
 		}
 		GameGuide(i);

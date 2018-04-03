@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour
         {
             scene = 1;
             j = 0;
-            SceneManager.LoadScene(6);
+            SceneManager.LoadScene(7);
         }
         SetCurrentQuestion();
 
