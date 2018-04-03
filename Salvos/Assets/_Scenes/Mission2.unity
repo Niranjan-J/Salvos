@@ -399,8 +399,8 @@ MonoBehaviour:
   maxz: 900
   panel: {fileID: 275288044}
   score: {fileID: 307768637}
-  m_moveSpeed: 30
-  m_turnSpeed: 200
+  m_moveSpeed: 20
+  m_turnSpeed: 50
   m_jumpForce: 4
   m_animator: {fileID: 115162686}
   m_rigidBody: {fileID: 115162688}
@@ -4647,6 +4647,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 468390769}
+  - component: {fileID: 468390770}
   m_Layer: 0
   m_Name: Wall
   m_TagString: Untagged
@@ -4676,6 +4677,20 @@ Transform:
   m_Father: {fileID: 82397707}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &468390770
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 468390768}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 0}
 --- !u!1001 &491329932
 Prefab:
   m_ObjectHideFlags: 0
@@ -13042,7 +13057,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1615625940}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 763, y: 0, z: 393.5}
   m_LocalScale: {x: 250, y: 250, z: 10}
   m_Children: []

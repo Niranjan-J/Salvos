@@ -13,7 +13,7 @@ OcclusionCullingSettings:
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 9
+  serializedVersion: 8
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
@@ -39,7 +39,6 @@ RenderSettings:
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
   m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
-  m_UseRadianceAmbientProbe: 0
 --- !u!157 &4
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -55,10 +54,11 @@ LightmapSettings:
     m_EnableBakedLightmaps: 1
     m_EnableRealtimeLightmaps: 0
   m_LightmapEditorSettings:
-    serializedVersion: 10
+    serializedVersion: 9
     m_Resolution: 1
     m_BakeResolution: 50
-    m_AtlasSize: 1024
+    m_TextureWidth: 1024
+    m_TextureHeight: 1024
     m_AO: 0
     m_AOMaxDistance: 1
     m_CompAOExponent: 0
@@ -1614,34 +1614,111 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questions:
-  - fact: Answer is 1
+  - fact: What are the conditions that trigger landslides ?
     ans: 1
     option:
-    - True
-    - False
-    - true
-    - false
-  - fact: Answer is 3
+    - Global warming
+    - Earthquakes
+    - Fire
+    - Weather changes
+  - fact: Which of the following are the steps that prevent landslides ?
     ans: 3
     option:
-    - True
-    - Hello
-    - False
-    - false
-  - fact: Answer is 2
+    - Deforestation
+    - Storing rainwater
+    - Burning bushes
+    - Plantation
+  - fact: Which of these is a landslide warning sign ?
     ans: 2
     option:
-    - True
-    - Hello
-    - False
-    - false
-  - fact: Answer is 0
+    - Thunderstorm
+    - Snowfall
+    - Falling rocks
+    - Increasing temperature
+  - fact: Which item should be in your emergency kit ?
+    ans: 2
+    option:
+    - Calender
+    - Story books
+    - Food packets
+    - Radio
+  - fact: Which of the following is not a landslide prone state in India ?
+    ans: 2
+    option:
+    - Maharastra
+    - Sikkim
+    - Bihar
+    - Uttrakhand
+  - fact: Which of the following is not a reason for landslides ?
+    ans: 3
+    option:
+    - Deforestation
+    - Uncontrolled mining
+    - Hillside construction
+    - Air pollution
+  - fact: What are the major geological causes of landslides ?
+    ans: 3
+    option:
+    - Global warming
+    - Weather change
+    - Acid rain
+    - Soil erosion
+  - fact: The steeper a slope is, the greater the ____
     ans: 0
     option:
-    - True
-    - Hello
-    - False
-    - false
+    - Shearing stress
+    - Friction
+    - Pressure
+    - Temperature
+  - fact: Which part of the plant prevents landslides the most ?
+    ans: 0
+    option:
+    - Root
+    - Leaf
+    - Trunk
+    - Crown
+  - fact: Which types of trees prevent landslides ?
+    ans: 1
+    option:
+    - Taller trees
+    - Branched root
+    - Flower trees
+    - Bushes
+  - fact: What percentage of Area in India is landslide prone hazardous zone ?
+    ans: 1
+    option:
+    - 7%
+    - 12%
+    - 40%
+    - 80%
+  - fact: What should you do after a landslide?
+    ans: 2
+    option:
+    - Inspect damage
+    - Stay away
+    - Help injured
+    - None of the above
+  - fact: During evacuation, the path you follow should have ___.
+    ans: 3
+    option:
+    - River
+    - Landslide area
+    - Bridges
+    - None of the above
+  - fact: Where should you build your house in landslide prone areas ?
+    ans: 3
+    option:
+    - Near steep slope
+    - Near rivers
+    - Near mountain-edges
+    - flat ground
+  - fact: Which event is associated with the greatest loss of life in India ?
+    ans: 3
+    option:
+    - Darjeeling(1968)
+    - Amboori(2001)
+    - Guwahati(1948)
+    - Kedarnath(2013)
   score: {fileID: 613180471}
   factText: {fileID: 1103458940}
   opt1: {fileID: 2038206436}
@@ -2721,7 +2798,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1229587898
 GameObject:
   m_ObjectHideFlags: 0
