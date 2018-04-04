@@ -36,7 +36,7 @@ public class MissionComplete : MonoBehaviour
                 starsCount = 2;
                 animator.SetTrigger("Star_2");
             }
-            else
+            else if (ScoreController.i == 3)
             {
                 isFinished = true;
                 starsCount = 3;
@@ -63,7 +63,7 @@ public class MissionComplete : MonoBehaviour
                 starsCount = 2;
                 animator.SetTrigger("Star_2");
             }
-            else
+            else if (Mission2Character.j == 3)
             {
                 isFinished = true;
                 starsCount = 3;
@@ -90,7 +90,7 @@ public class MissionComplete : MonoBehaviour
                 starsCount = 2;
                 animator.SetTrigger("Star_2");
             }
-            else
+            else if (GameScript.priority > 15)
             {
                 isFinished = true;
                 starsCount = 3;
@@ -107,7 +107,7 @@ public class MissionComplete : MonoBehaviour
                 animator.SetTrigger("Star_0");
             }
             else
-            if (GameManager.i <= 4)
+            if (GameManager.i <= 5)
             {
                 starsCount = 1;
                 animator.SetTrigger("Star_1");
@@ -117,7 +117,7 @@ public class MissionComplete : MonoBehaviour
                 starsCount = 2;
                 animator.SetTrigger("Star_2");
             }
-            else
+            else if (GameManager.i > 8)
             {
                 isFinished = true;
                 starsCount = 3;
@@ -138,46 +138,46 @@ public class MissionComplete : MonoBehaviour
 
     public void Menu()
     {
-        if (Mission2PopupHandler.scene == 1)
-        {
-            Mission2PopupHandler.scene = 0;
-        }
-        else
-       if (GameManager.scene == 1)
-        {
-            GameManager.scene = 0;
-        }
-        else
         if (PopupHandler.scene == 1)
         {
             PopupHandler.scene = 0;
         }
-        else
-        if (GameScript.scene == 1)
+        if (Mission2PopupHandler.scene == 1)
+        {
+            Mission2PopupHandler.scene = 0;
+        }
+         if (GameScript.scene == 1)
         {
             GameScript.scene = 0;
+        }
+        if (GameManager.scene == 1)
+        {
+            GameManager.scene = 0;
         }
         SceneManager.LoadScene(6);
     }
 
     public void Retry()
     {
-        if (GameManager.scene == 1)
-        {
-            SceneManager.LoadScene(4);
-        }
         if (PopupHandler.scene == 1)
         {
             SceneManager.LoadScene(1);
-        }
-        if (GameScript.scene == 1)
-        {
-            SceneManager.LoadScene(3);
         }
         if (Mission2PopupHandler.scene == 1)
         {
             SceneManager.LoadScene(2);
         }
+        if (GameScript.scene == 1)
+        {
+            SceneManager.LoadScene(3);
+        }
+        if (GameManager.scene == 1)
+        {
+            SceneManager.LoadScene(4);
+        }
+       
+        
+        
 
     }
 
