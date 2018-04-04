@@ -194,6 +194,7 @@
      <Compile Include="Assets\Scripts\Ring2Plantation.cs" />
      <Compile Include="Assets\Scripts\Ring5Plantation.cs" />
      <Compile Include="Assets\Scripts\Ring6Plantation.cs" />
+     <Compile Include="Assets\Scripts\RocksCollisionHandler.cs" />
      <Compile Include="Assets\Scripts\ScoreController.cs" />
      <Compile Include="Assets\Scripts\SimpleCharacterControl.cs" />
      <None Include="Assets\Packs\NatureStarterKit2\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
