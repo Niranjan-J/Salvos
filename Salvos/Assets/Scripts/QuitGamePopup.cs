@@ -25,6 +25,6 @@ public class QuitGamePopup : MonoBehaviour {
 	}
 
 	public void Quit(){
-		SceneManager.LoadScene(5);//6
+		SceneManager.LoadScene(6);
 	}
 }

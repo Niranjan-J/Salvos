@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/InteractiveMobileMenu/Scenes/SelectLevel.unity
+- path: Assets/_Scenes/Mission3.unity
   isLoaded: 1
   isActive: 1

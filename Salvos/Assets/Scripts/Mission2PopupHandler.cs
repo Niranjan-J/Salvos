@@ -58,7 +58,7 @@ public class Mission2PopupHandler : MonoBehaviour {
 		else if(j==7){
 			panel.SetActive(false);
 			back.SetActive(true);
-			NextText.text="MAIN MENU";
+			NextText.text="FINISH";
 			BackText.text="RETRY";
 		}
 	}
