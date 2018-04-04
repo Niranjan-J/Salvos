@@ -24,8 +24,9 @@ EditorBuildSettings:
     path: Assets/_Scenes/Intro.unity
     guid: d3bce9fc80a185f419aa69fa7ce36ec7
   - enabled: 1
-    path: Assets/InteractiveMobileMenu/Scenes/SelectLevel.unity
+    path: Assets/_Scenes/SelectLevel.unity
     guid: c549fcda082ae6144822a268b016bbdc
   - enabled: 1
     path: Assets/_Scenes/MissionComplete.unity
     guid: ec565ea255bddec408d08754303b8d42
+  m_configObjects: {}

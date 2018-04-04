@@ -1,11 +1,12 @@
 fileFormatVersion: 2
 guid: 953dbc26f7d066d4489679db0042a33b
-timeCreated: 1521804705
-licenseType: Free
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - QuitPanel: {instanceID: 0}
+  - YButton: {instanceID: 0}
+  - RButton: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

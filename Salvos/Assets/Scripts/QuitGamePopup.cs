@@ -25,6 +25,10 @@ public class QuitGamePopup : MonoBehaviour {
 	}
 
 	public void Quit(){
+        GameManager.scene = 0;
+        PopupHandler.scene = 0;
+        Mission2PopupHandler.scene = 0;
+        GameScript.scene = 0;
 		SceneManager.LoadScene(6);
 	}
 }

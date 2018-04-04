@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public Question[] questions;
     private static List<Question> unansweredQuestions;
     public Text score;
+    public Text Progress;
     public static int i = 0;
     private static int j = 0;
     public static int scene = 0;
@@ -29,7 +30,7 @@ public class GameManager : MonoBehaviour
     private float TimeBwQuestions = 1f;
     [SerializeField]
     private Animator animator;
-    
+
     void Start()
     {
         scene = 0;
@@ -38,6 +39,7 @@ public class GameManager : MonoBehaviour
         {
             unansweredQuestions = questions.ToList<Question>();
         }
+        Progress.text = "Progress : " + j.ToString() + "/10";
         j++;
         if (j >= 11)
         {
