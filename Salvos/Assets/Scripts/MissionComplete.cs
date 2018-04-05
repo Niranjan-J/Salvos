@@ -18,7 +18,7 @@ public class MissionComplete : MonoBehaviour
     {
         AudioSource[] a;
         a = gameObject.GetComponentsInParent<AudioSource>();
-        a[0].PlayDelayed(0.8f);
+        a[0].PlayDelayed(0.6f);
         if (PopupHandler.scene == 1)
         {
             levelIndex = 1;
