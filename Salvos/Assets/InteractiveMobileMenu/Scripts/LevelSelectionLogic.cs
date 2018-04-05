@@ -31,6 +31,10 @@ public class LevelSelectionLogic : MonoBehaviour {
 					level.starsCount = PlayerPrefs.GetInt("startsCount"+ level.LevelIndex.ToString());
 			}
 		}
+		if(!levelList[0].isFinished){
+			levelList[1].unlocked=false;	
+		}
+
 
 		for(int i = 0; i < levelList.Count; i++)
 		{
