@@ -101,7 +101,18 @@ public class Mission2Character : MonoBehaviour {
     private void OnTriggerEnter(Collider other) {
         if(other.gameObject.CompareTag("Firstaid")){
             other.gameObject.SetActive(false);
-            i++;
+            AudioSource[] a;
+            a = gameObject.GetComponentsInParent<AudioSource>();
+            if (j < 3)
+            {
+                a[0].Play();
+                i++;
+                a[1].Play();
+            }
+            else
+            {
+                i++;
+            }
             score.text="First Aid Boxes: "+i+"\nPersons Saved: "+j;
         }
         else if(other.gameObject.CompareTag("Injured")){
@@ -137,9 +148,13 @@ public class Mission2Character : MonoBehaviour {
     {
         float v = Input.GetAxis("Vertical");
         float h = Input.GetAxis("Horizontal");
-
+        AudioSource[] a;
+        a = gameObject.GetComponents<AudioSource>();
         bool walk = Input.GetKey(KeyCode.LeftShift);
-
+        if (v == 0)
+        {
+            a[2].Play();
+        }
         if (v < 0) {
             if (walk) { v *= m_backwardsWalkScale; }
             else { v *= m_backwardRunScale; }

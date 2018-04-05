@@ -10,7 +10,10 @@ public class Ring2Plantation : MonoBehaviour {
 		Destroy(gameObject);
 		m.SetActive(true);
 		Destroy(dr);
-		re1.SetActive(true);
+        AudioSource[] a;
+        a = gameObject.GetComponentsInParent<AudioSource>();
+        a[0].Play();
+        re1.SetActive(true);
 		re2.SetActive(true);
 	}
 }

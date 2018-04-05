@@ -11,6 +11,9 @@ public class Ring1Plantation : MonoBehaviour {
 		ScoreController.i++;
 		m.SetActive(true);
 		Destroy(dr);
+        AudioSource[] a;
+        a = gameObject.GetComponentsInParent<AudioSource>();
+        a[0].Play();
 		re1.SetActive(true);
 		re2.SetActive(true);
 	}

@@ -10,7 +10,10 @@ public class Ring5Plantation : MonoBehaviour {
 		Destroy(gameObject);
 		m.SetActive(true);
 		Destroy(dr);
-		mt.text="You Lose.\nHint: STEEPER MOUNUTAINS have greater chances of landslides.";
+        AudioSource[] a;
+        a = gameObject.GetComponentsInParent<AudioSource>();
+        a[0].Play();
+        mt.text="You Lose.\nHint: STEEPER MOUNUTAINS have greater chances of landslides.";
 		p.SetActive(true);
 	}
 }

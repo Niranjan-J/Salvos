@@ -16,7 +16,9 @@ public class MissionComplete : MonoBehaviour
 
     void Start()
     {
-
+        AudioSource[] a;
+        a = gameObject.GetComponentsInParent<AudioSource>();
+        a[0].PlayDelayed(0.8f);
         if (PopupHandler.scene == 1)
         {
             levelIndex = 1;
@@ -124,6 +126,10 @@ public class MissionComplete : MonoBehaviour
                 animator.SetTrigger("Star_3");
             }
             GameManager.i = 0;
+        }
+        if (PlayerPrefsX.GetBool("isFinished" + levelIndex.ToString(), false))
+        {
+            isFinished = true;
         }
         PlayerPrefsX.SetBool("isFinished" + levelIndex.ToString(), isFinished);
         if (!PlayerPrefs.HasKey("startsCount" + levelIndex.ToString()))

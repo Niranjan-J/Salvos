@@ -103,6 +103,8 @@ public class SimpleCharacterControl : MonoBehaviour {
             default:
                 Debug.LogError("Unsupported state");
                 break;
+        
+
         }
         m_wasGrounded = m_isGrounded;
     }
@@ -111,9 +113,14 @@ public class SimpleCharacterControl : MonoBehaviour {
     {
         float v = Input.GetAxis("Vertical");
         float h = Input.GetAxis("Horizontal");
+        AudioSource a;
+        a = gameObject.GetComponent<AudioSource>();
 
         bool walk = Input.GetKey(KeyCode.LeftShift);
-
+        if (v == 0)
+        {
+            a.Play();
+        }
         if (v < 0) {
             if (walk) { v *= m_backwardsWalkScale; }
             else { v *= m_backwardRunScale; }
@@ -175,6 +182,7 @@ public class SimpleCharacterControl : MonoBehaviour {
             transform.rotation = Quaternion.LookRotation(m_currentDirection);
             if(!panel.activeSelf)
                 transform.position += m_currentDirection * m_moveSpeed * Time.deltaTime;
+            
 
             m_animator.SetFloat("MoveSpeed", direction.magnitude);
         }
