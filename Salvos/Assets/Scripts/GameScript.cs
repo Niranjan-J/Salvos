@@ -77,7 +77,7 @@ public class GameScript : MonoBehaviour
         score.text = "Budget : " + (budget).ToString() + "   ";
         if (exit(Pox) == 1)
         {
-            if (budget > 0)
+            if (budget >= 0)
             {
                 submit.gameObject.SetActive(true);
             }
