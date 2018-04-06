@@ -18,7 +18,8 @@ public class GameScript : MonoBehaviour
     public static int scene = 0;
     public GameObject[] Pox;
     public Text score;
-    public GameObject submit;
+    public GameObject submit,p;
+    public Text mt;
 
     public void gameScore(GameObject[] c, ref int budget, ref int score)
     {
@@ -90,6 +91,12 @@ public class GameScript : MonoBehaviour
     public void finish()
     {
         scene = 1;
-        SceneManager.LoadScene(7);
+        if(priority<=15){
+            mt.text="You lose. HINT: Spend on IMPORTANT things.";
+        }
+        else{
+            mt.text="Congratulations!!\nYou made a right choice. Spend on necessary things only.";
+        }
+        p.SetActive(true);
     }
 }

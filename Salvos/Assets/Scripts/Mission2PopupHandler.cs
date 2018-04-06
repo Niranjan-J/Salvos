@@ -9,7 +9,7 @@ public class Mission2PopupHandler : MonoBehaviour {
     public GameObject panel,back,next;
 	private Text Message,NextText,BackText;
 	private string[] s= {
-		"Hello! Let's get started with our 2nd Mission!",
+		"Hello! Let's get started with our 2nd Mission!\nEVACUTATE",
 		"Find First Aid Boxes and Highlighted Regions.",
 		"You have to pick up first aid boxes and heal the injured people.",
 		"Go to the highlighted regions to  heal the people.",

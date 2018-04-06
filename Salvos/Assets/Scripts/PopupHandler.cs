@@ -10,7 +10,7 @@ public class PopupHandler : MonoBehaviour
     public GameObject panel, back, next;
     private Text Message, NextText, BackText;
     private string[] s = {
-        "Hello! Let's get started with our 1st Mission!",
+        "Hello! Let's get started with our 1st Mission!PLANTATION",
         "Look at the mountain/peaks to find highlighted region.",
         "You can go to the highlighted region to plant trees on that mountain.",
         "You can only chose one among the two mountains.",
