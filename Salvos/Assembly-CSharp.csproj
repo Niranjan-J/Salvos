@@ -57,8 +57,6 @@
      <Compile Include="Assets\InteractiveMobileMenu\Scripts\Saving and Loading\PlayerPrefsX.cs" />
      <Compile Include="Assets\InteractiveMobileMenu\Scripts\Saving and Loading\SaveAndLoad.cs" />
      <Compile Include="Assets\InteractiveMobileMenu\Scripts\Temp\FinishLevel.cs" />
-     <Compile Include="Assets\Packs\MaterialUI\Examples\Scripts\04 - RadioButton\Example04.cs" />
-     <Compile Include="Assets\Packs\MaterialUI\Examples\Scripts\05 - Sliders\Example05.cs" />
      <Compile Include="Assets\Packs\MaterialUI\Scripts\Anim.cs" />
      <Compile Include="Assets\Packs\MaterialUI\Scripts\ButtonInteractableControl.cs" />
      <Compile Include="Assets\Packs\MaterialUI\Scripts\CheckboxConfig.cs" />
