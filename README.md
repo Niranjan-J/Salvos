@@ -1,5 +1,5 @@
 # Salvos
-Landslide awareness Game.
+Landslide awareness Game.\
 CS 208: Software Development Project.
 * The repository Salvos is the Unity Project.
 * The repository Documentation contains all the necessary documents and literature.
